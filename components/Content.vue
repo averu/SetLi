@@ -5,7 +5,7 @@
         <List/>
       </article>
       <aside class='w-full lg:w-1/2'>
-
+        <Parameter />
       </aside>
     </main>
   </div>
