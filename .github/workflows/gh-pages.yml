@@ -23,13 +23,11 @@ jobs:
           node-version: "16"
 
       - name: Install and Build
-        run: |
-          yarn
-          yarn generate:gh-pages
+        run: yarn
+        run: yarn generate:gh-pages
 
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
