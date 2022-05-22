@@ -2,9 +2,11 @@ export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
+  target: 'static',
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'setlist',
+    title: 'SetLi',
     htmlAttrs: {
       lang: 'en'
     },
@@ -23,9 +25,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '@/assets/css/fonts.css',
-  ],
+  css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
